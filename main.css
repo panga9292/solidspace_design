@@ -99,7 +99,7 @@ t {
     "bio";      
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .container {
     height: 225px;
     grid-template-columns: auto 50%;
