@@ -48,13 +48,6 @@ body {
   }
 }
 
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 52%;
-  }
-}
-
 h1 {
   font-family: 'Cormorant', serif;
   font-size: 4rem; /* 18px */
@@ -102,21 +95,19 @@ t {
 
 .container {
   display: grid;
-  height: 200px;
+  height: 100%;
   background: inherit;
   grid-template-columns: 100%;
-  grid-template-rows: 100px auto;
   border-bottom: solid 1px;
   border-color: rgb(51,51,51);
-  padding-bottom: 0%;
   grid-template-areas:
     "name"
     "bio";      
 }
 
-@media (min-width: 360px) {
+@media (min-width: 41.25em) {
   .container {
-    height: 225px;
+    height: 22em;
     grid-template-columns: auto 50%;
     grid-template-rows: 100%;
     grid-areas: "name bio";
@@ -127,14 +118,21 @@ t {
     background-color: inherit;
     color: rgb(113,113,113);
     grid-area: "name";
+    margin-bottom: 2em;
   }
 
 .box-2 {
     background-color: inherit;
     text-align: left;
     grid-area: "bio";
-    margin-left: 0rem;
+    margin-bottom: 4%;
   }
+
+@media (min-width: 41.25em) { /*push bio to alignment*/
+  .box-2 {
+    margin-left: 3rem;
+  }
+}
 
 /*projects*/
 
@@ -143,11 +141,11 @@ t {
   width: auto;
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 41.25em) {
   .projects-container {
     grid-row-gap: 3rem;
     grid-template-columns: repeat(2, minmax(200px,1fr));
