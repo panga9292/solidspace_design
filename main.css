@@ -15,13 +15,24 @@ html {
 }
 
 body {
-  background-color: rgb(18, 18, 18);
-  margin-top: 4rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  max-width: 1280px;
+	background-color: rgb(18, 18, 18);
+  	margin-top: 4rem;
+  	margin-left: 2%;
+  	margin-right: 2%;
+  	margin-bottom: auto;
 }
+
+@media (min-width: 1400px) {
+		body {
+			background-color: rgb(18, 18, 18);
+  			margin-top: 4rem;
+  			margin-left: auto;
+  			margin-right: auto;
+  			margin-bottom: auto;
+  			max-width: 1400px;
+  			}
+  		}
+	
 
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
@@ -33,7 +44,7 @@ body {
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size: 56%;
   }
 }
 
@@ -95,17 +106,17 @@ t {
   background: inherit;
   grid-template-columns: 100%;
   grid-template-rows: 100px auto;
-  padding-bottom: 6%;
   border-bottom: solid 1px;
   border-color: rgb(51,51,51);
+  padding-bottom: 0%;
   grid-template-areas:
     "name"
     "bio";      
 }
 
-@media (min-width: 880px) {
+@media (min-width: 600px) {
   .container {
-    height: 200px;
+    height: 225px;
     grid-template-columns: auto 50%;
     grid-template-rows: 100%;
     grid-areas: "name bio";
@@ -131,7 +142,7 @@ t {
     margin-left: 0rem;
   }
 
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
   .box-2 {
     margin-left: 3rem;
   }
@@ -148,7 +159,7 @@ t {
 
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
   .projects-container {
     grid-row-gap: 3rem;
     grid-template-columns: repeat(2, minmax(200px,1fr));
@@ -163,7 +174,6 @@ t {
     grid-template-rows:
       1fr;
     
-
 }
   .item2{
     background:inherit;
@@ -171,7 +181,12 @@ t {
     grid-template-rows: 
       1fr;
 }
-  .item3{background:PaleTurquoise;}
+  .item3{
+    background:inherit;
+    display: grid;
+    grid-template-rows:
+      1fr
+  }
   .item4{background:LightPink;}
   .item5{background:PaleGreen;}
 
@@ -183,6 +198,12 @@ t {
   display: flex;
   width: 100%;
 }
+
+.project-image:hover {
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
 
 .title-box {
   background: inherit;
