@@ -33,7 +33,6 @@ body {
   			}
   		}
 	
-
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -85,8 +84,6 @@ t {
   font-weight:300;
   line-height: 1.4;
   color: rgba(256 256 256);
-
-
 }
 
 .grey-color-text {
@@ -103,6 +100,16 @@ t {
   grid-template-areas:
     "name"
     "bio";      
+}
+
+@media (min-width: 412px) {
+  .container {
+    height: 22em;
+    grid-template-columns: 100%;
+    grid-areas: 
+    "name"
+    "bio";
+  }
 }
 
 @media (min-width: 41.25em) {
@@ -127,6 +134,12 @@ t {
     grid-area: "bio";
     margin-bottom: 4%;
   }
+  
+@media (min-width: 412px) { /*push bio to alignment*/
+  .box-2 {
+    margin-left: 3rem;
+  }
+}
 
 @media (min-width: 41.25em) { /*push bio to alignment*/
   .box-2 {
@@ -141,9 +154,17 @@ t {
   width: auto;
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 3rem;
-  margin-top: 2rem;
-
+  margin-top: 2.5rem;
 }
+
+@media (min-width: 412px) {
+  .projects-container {
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    grid-template-rows: repeat(3, minmax(200px,1fr));
+    border-radius: 5px;
+    }
+  }
 
 @media (min-width: 41.25em) {
   .projects-container {
@@ -154,25 +175,27 @@ t {
     }
   }
 
-  .item1{
+.item1{
     background:inherit;
     display: grid;
     grid-template-rows:
       1fr;
-    
 }
+
   .item2{
     background:inherit;
     display: grid;
     grid-template-rows: 
       1fr;
 }
+
   .item3{
     background:inherit;
     display: grid;
     grid-template-rows:
       1fr
   }
+  
   .item4{background:LightPink;}
   .item5{background:PaleGreen;}
 
@@ -201,7 +224,7 @@ t {
   color: white;
 }
 
-@media (min-width: 768px){
+@media (min-width: 41.25em){
   .project-title {
    padding: 2rem 0rem 0.5rem 0rem;
   }
@@ -219,7 +242,7 @@ t {
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 41.25em){
   .project-subtitle {
     font-size: 2.2rem;
     margin-top: 0rem;
