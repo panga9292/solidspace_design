@@ -127,7 +127,7 @@ t {
     margin-left: 0rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .box-2 {
     margin-left: 3rem;
   }
