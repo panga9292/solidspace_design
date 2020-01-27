@@ -99,7 +99,7 @@ t {
     "bio";      
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .container {
     height: 225px;
     grid-template-columns: auto 50%;
@@ -144,7 +144,7 @@ t {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .projects-container {
     grid-row-gap: 3rem;
     grid-template-columns: repeat(2, minmax(200px,1fr));
