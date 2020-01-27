@@ -157,15 +157,6 @@ t {
   margin-top: 2.5rem;
 }
 
-@media (min-width: 412px) {
-  .projects-container {
-    grid-row-gap: 3rem;
-    grid-template-columns: repeat(2, minmax(200px,1fr));
-    grid-template-rows: repeat(3, minmax(200px,1fr));
-    border-radius: 5px;
-    }
-  }
-
 @media (min-width: 41.25em) {
   .projects-container {
     grid-row-gap: 3rem;
