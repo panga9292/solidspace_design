@@ -16,8 +16,7 @@ html {
 
 body {
   background-color: rgb(18, 18, 18);
-  margin: auto;
-  margin-top: 2rem;
+  margin: 2rem auto auto 2rem;
   max-width: 1280px;
 }
 
