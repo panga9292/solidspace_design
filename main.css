@@ -114,7 +114,7 @@ t {
     "bio";      
 }
 
-@media (min-width: 600px) {
+@media (min-width: 360px) {
   .container {
     height: 225px;
     grid-template-columns: auto 50%;
@@ -129,7 +129,7 @@ t {
     grid-area: "name";
   }
 
-@media (min-width: 600px) {
+@media (min-width: 360px) {
   .box-1 {
     text-align: left;
   }
@@ -142,7 +142,7 @@ t {
     margin-left: 0rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
   .box-2 {
     margin-left: 3rem;
   }
