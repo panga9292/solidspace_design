@@ -125,12 +125,6 @@ t {
     margin-bottom: 4%;
   }
 
-@media (min-width: 41.25em) { /*push bio to alignment*/
-  .box-2 {
-    margin-left: 3rem;
-  }
-}
-
 /*projects*/
 
 .projects-container {
