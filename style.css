@@ -70,6 +70,15 @@ x {
   line-height: 1.4;
 }
 
+.h2 {
+	font-family: 'Cormorant', serif;
+  	font-size: 3rem;
+  	font-weight:300;
+  	line-height: 1.1;
+ 	color: rgb(137,137,137);
+ 	opacity: 0.5;
+ 	}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.4rem;
@@ -95,8 +104,6 @@ t {
   height: 100%;
   background: inherit;
   grid-template-columns: 100%;
-  border-bottom: solid 1px;
-  border-color: rgb(51,51,51);
   grid-template-areas:
     "name"
     "bio";      
@@ -136,16 +143,19 @@ t {
 .projects-container {
   display: grid;
   width: auto;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 3rem;
   margin-top: 2.5rem;
+  margin-bottom: 2em;
+  padding-bottom: 4em;
+
 }
 
 @media (min-width: 41.25em) {
   .projects-container {
     grid-row-gap: 3rem;
     grid-template-columns: repeat(2, minmax(200px,1fr));
-    grid-template-rows: repeat(3, minmax(200px,1fr));
+    grid-template-rows: repeat(2, minmax(200px,1fr));
     border-radius: 5px;
     }
   }
@@ -170,9 +180,6 @@ t {
     grid-template-rows:
       1fr
   }
-  
-  .item4{background:LightPink;}
-  .item5{background:PaleGreen;}
 
 .itemOne{background:inherit}
 .itemTwo{background:inherit}
@@ -225,7 +232,65 @@ t {
 }
 }
 
-/*-----------------------animations*-----------------------*/
+/* ----------------------------projects end----------------------- */
+
+/* -----------------------information start----------------------- */
+
+.header-container {
+	height: auto;
+	width: 100%;
+}
+
+#about-header {
+	width: 100%
+ 	height: auto;
+ 	padding-bottom: .2em;
+ 	border-top: solid 1px;
+ 	border-bottom: solid 1px;
+  	border-color: rgb(51,51,51);
+  	padding-top: .1em;
+ 	}
+  
+  #info-box-container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  
+  @media (min-width: 50em){
+    #info-box-container {
+  		flex-direction: row;
+  		} 
+  	}
+ 
+  #info-box-1 {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 3em;
+  }
+
+@media (min-width: 50em){
+    #info-box-1 {
+  		padding-right: 1.5em;
+  		} 
+  	}
+
+  #info-box-2 {
+    width: 100%;
+    height: 50%;
+  }
+  
+@media (min-width: 50em){
+    #info-box-2 {
+  		padding-left: 1.5em;
+  		} 
+  	}
+
+/* -----------------------information end------------------------- */
+
+
+/*------------------------------animations*-----------------------*/
 
 .fade-in1 {
 	opacity: 1;
