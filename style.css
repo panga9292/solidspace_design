@@ -195,6 +195,7 @@ t {
   display: grid;
   grid-template-rows: 
     1fr;
+  padding-bottom: 2em;
 }
 
 .item3{
